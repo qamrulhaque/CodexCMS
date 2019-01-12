@@ -1,0 +1,43 @@
+{
+    "name": "codexcafe/codexcms",
+    "description": ":description",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Qamrul Haque",
+            "email": "qamrul@qamrulhaque.com",
+            "homepage": "https://qamrulhaque.com"
+        }
+    ],
+    "homepage": "https://github.com/codexcafe/codexcms",
+    "keywords": ["Laravel", "CodexCMS"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodexCafe\\CodexCMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodexCafe\\CodexCMS\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodexCafe\\CodexCMS\\CodexCMSServiceProvider"
+            ],
+            "aliases": {
+                "CodexCMS": "CodexCafe\\CodexCMS\\Facades\\CodexCMS"
+            }
+        }
+    }
+}
